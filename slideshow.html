@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<title>Slide Show</title>
+</head>
+
+
+<body>
+	<p><b>Welcome to my Slideshow</b></p>
+
+
+<IMG SRC="images/photo1.jpg" NAME="mypic" BORDER=0 HEIGHT="300" WIDTH="300">
+<br>
+
+
+	<script type="text/javascript">
+
+		var num = 1;
+
+		var image1 = new Image();
+		image1.src = "images/photo1.jpg";
+
+		var image2 = new Image();
+		image2.src = "images/photo2.png";
+
+		var image3 = new Image();
+		image3.src = "images/photo3.jpg";
+
+		var image4 = new Image()
+		image4.src = "images/photo4.jpg";
+
+		var image5 = new Image()
+		image5.src = "images/photo5.jpg";
+	</script>
+
+
+	<button onclick="previous()">Previous</button>
+	<button onclick="next()">Next</button>
+
+
+
+
+	<script>
+		function next()
+		{
+			num += 1;
+			if(num == 6)
+			{
+				num = 1;
+			}
+			document.mypic.src = eval("image" + num + ".src");
+		};
+
+		function previous()
+		{
+			num -= 1;
+			if(num == 0){num = 5};
+			document.mypic.src = eval("image" + num + ".src");
+		};
+	</script>
+
+
+
+</body>
+
+
+</html>

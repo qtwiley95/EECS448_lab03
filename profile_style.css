@@ -1,0 +1,34 @@
+
+body
+{
+background-image: url("http://i2.cdn.turner.com/cnnnext/dam/assets/150827142602-01-skyline-quiz-chicago-1-jpg-super-169.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+h1
+{
+ color: blue;
+}
+
+p
+{
+ color: red;
+ font-family: courier;
+ font-size: 120%
+}
+
+a
+{
+ background-color: blue;
+ color: red;
+ font-size: 22pt;
+}
+
+a:hover
+{
+ background-color: red;
+ color: blue;
+ font-size: 30pt;
+}
+
